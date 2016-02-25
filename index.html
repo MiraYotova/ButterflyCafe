@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="Butterfly Cafe - Simple. Natural. Organic.">
+<meta name="keywords" content="Fresh, homemade style meal. Fresh Coffee, Organic juices. Breakfast, Brunch and Lunch with friends.">
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+<title>Butterfly Cafe</title>
+
+<link rel="shortcut icon" href="images/favicon.ico"/>
+
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/slicknav.css" rel="stylesheet" type="text/css" />
+<link href="css/nivo-slider.css" rel="stylesheet" type="text/css" />
+<link href="themes/dark/dark.css" rel="stylesheet" type="text/css" />
+
+<link href='https://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
+
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <![endif]-->
+        
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script src="js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(window).load(function() {
+	$('#slider').nivoSlider({
+	effect:'fade',
+	manualAdvance: false 
+	});
+	});
+	
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+
+function newsLetterForm()
+{
+	if(document.getElementById("emailNews").value == "")
+		{
+			document.getElementById("alert").innerHTML = "Please, enter an email address.";
+			return false;
+		}
+		
+	else {return true;}
+		
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('images/facebookHover.png','images/yelpHover.png','images/twitterHover.png','images/home_drinkR.jpg','images/home_foodR.jpg','images/home_dessertsR.jpg')">
+	
+    <div id="wrapper">
+<!--START HEADER-->
+    <header>
+    	<div id="logo">
+      		<a href="index.html"><img src="images/logo.png" alt="butterfly cafe logo"></a>
+		</div> 
+        
+        <div id="socialMedia">
+   	  <a href="http://facebook.com" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('facebook','','images/facebookHover.png',1)"><img src="images/facebook.png" alt="facebook" width="30" height="30" id="facebook"></a>
+      <a href="http://yelp.com/la" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Yelp','','images/yelpHover.png',1)"><img src="images/yelp.png" alt="yelp" width="30" height="30" id="Yelp"></a>
+      <a href="http://twitter.com" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Twitter','','images/twitterHover.png',1)"><img src="images/twitter.png" alt="twitter" width="30" height="30" id="Twitter"></a>
+      </div>
+      
+      <div id="social">
+      <a href="http://facebook.com" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('facebookM','','images/facebookHover.png',1)"><img id="facebookM" src="images/facebookM.png" alt="facebookM" width="27" height="27"></a>&nbsp;
+      <a href="http://twitter.com" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('twitterM','','images/twitterHover.png',1)"><img id="twitterM" src="images/twitterM.png" alt="twitterM" width="27" height="27"></a>&nbsp;
+      <a href="http://yelp.com/la" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('yelpM','','images/yelpHover.png',1)"><img id="yelpM" src="images/yelpM.png" alt="yelpM" width="27" height="27"></a> </div>
+        
+      
+      
+<!--START NAV-->
+	<div id="mobile-nav"></div>
+
+    <nav> 
+      <ul id="menu">
+        <li class="highlight"><a href="index.html">Home</a></li>
+        
+        <li class="subNav"><a href="menu.html">Menu</a>
+          <ul>	
+            <li><a href="breakfast.html">Breakfast</a></li>
+            <li><a href="breakfast.html">Lunch</a></li>
+            <li><a href="breakfast.html">All Day</a></li>
+            <li><a href="breakfast.html">Desserts</a></li>
+            <li><a href="breakfast.html">Drinks</a></li>
+          </ul>
+        </li>    
+    
+        <li class="subNav"><a href="locations.html">Locations</a>
+          <ul>
+            <li><a href="agourahills.html">Agoura Hills</a></li>
+            <li><a href="agourahills.html">Santa Monica</a></li>
+            <li><a href="agourahills.html">Sherman Oaks</a></li>
+            <li><a href="agourahills.html">Studio City</a></li>
+            <li><a href="agourahills.html">Thousand Oaks</a></li>
+          </ul>
+        </li>
+    
+        <li><a href="#">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+<!--END NAV-->
+
+	</header>
+<!--END HEADER-->    
+    
+    
+<!--SLIDESHOW-->  
+    <div id="slideshow">
+      	<div class="slider-wrapper theme-dark">
+        	<div class="ribbon"></div>
+            	<div id="slider" class="nivoSlider">
+                  <img src="images/slide1.jpg" alt="" />
+                  <img src="images/slide2.jpg" alt="" />
+                  <img src="images/slide3.jpg" alt="" />
+                  <img src="images/slide4.jpg" alt="" />
+                  <img src="images/slide5.jpg" alt="" />
+                  <img src="images/slide7.jpg" alt="" />
+                  <img src="images/slide6.jpg" alt="" />
+				</div>
+      		</div>
+      	</div>
+        
+        
+    <section id="headText">
+    	<div><img src="images/Pattern.png" alt="butterfly picture" /></div>
+    	<div><p>InButterfly Cafe, we are serving only, homemade healthy meal, prepared with fresh local produce. Comfortable, and casual place where you can enjoy the taste of coffee brewed just for you, organic herbal tea or glass of fresh squeezed fruits. Our dishes are perfect fit for your healthy lifestyle.
+        </p></div>
+    </section>
+    
+    <section id="content">
+    	<div id="ImgMenu">
+            <a href="drinks.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('drink','','images/home_drinkR.jpg',1)"><img id="iLeft" src="images/home_drink.jpg" alt="drink"></a><a href="food.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('food','','images/home_foodR.jpg',1)"><img id="iCenter" src="images/home_food.jpg" alt="food"></a><a href="desserts.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('desserts','','images/home_dessertsR.jpg',1)"><img id="iRight" src="images/home_desserts.jpg" alt="desserts"></a>
+         </div>
+        
+        <div id="imgTxt">
+        	<div class="tLeft"><a href="drinks.html"><p>.Drinks.</p></a></div>
+        	<div class="tCenter"><a href="food.html"><p>.Food.</p></a></div>
+        	<div class="tRight"><a href="desserts.html"><p>.Desserts.</p></a></div>
+        </div>
+    </section>
+    
+<!--news form--> 
+	<section id="newsletterForm">
+    	<div class="newsletter">
+			<h2>Subscribe</h2>   
+			<p>Subscribe to our newsletter to get the latest scoop right to your inbox.</p>
+            <p id="alert"></p>
+    	</div>
+    
+        <div class="subscribe">
+            <form method="post" class="subscribe-form" action="index.html">
+              <input type="email" name="email" id="emailNews" class="subscribe-input" placeholder="Email address">
+              <button type="submit" class="subscribe-submit" onClick="return newsLetterForm();">Subscribe</button>
+            </form>
+        </div>
+
+	</section>  
+  
+<!--LOCATION-->    
+    <section id="location">
+        <div id="h2blue">
+            <h2>Locations</h2>
+        </div>    
+
+        <div class="headline">
+        	<h4>Open Daily 8:00am - 6:00pm</h4>
+        </div>
+    <div>
+      	<div class="loc">
+        	<img src="images/Pattern_loc.png" alt="butterfly" class="locImg" /><br>
+        	<a href="agourahills.html"><h4>Agoura Hills</h4></a>
+            <p><img src="images/location.png" alt="location icon" class="icon"/><a id="ah" onClick="openMapAH();"> 29001 Canwood str.,<br>Agoura Hills, CA 91301</a></p>	
+            <p><img src="images/phone.png" alt="phone icon" class="icon"/><a href="tel:8185550606"> (818) 555-0606</a> </p>
+        </div>
+        
+        <div class="loc">
+        	<img src="images/Pattern_loc.png" alt="butterfly" class="locImg" /><br>
+            <a href="santamonica.html"><h4>Santa Monica</h4></a>
+            <p><img src="images/location.png" alt="location icon" class="icon"/><a id="sm" onClick="openMapSM();">1447 2nd street,<br>Santa Monica, CA 90401</a></p>
+            <p><img src="images/phone.png" alt="phone icon" class="icon"/><a href="tel:3105550606"> (310) 555-0606</a> </p>
+        </div>
+        
+        <div class="loc">
+        	<img src="images/Pattern_loc.png" alt="butterfly" class="locImg" /><br>
+            <a href="shermanoaks.html"><h4>Sherman Oaks</h4></a>
+            <p><img src="images/location.png" alt="location icon" class="icon"/><a id="so" onClick="openMapSO();">14120 Ventura Blvd., <br> Sherman Oaks, CA 91423</a></p>
+            <p><img src="images/phone.png" alt="phone icon" class="icon"/><a href="tel:8185550505"> (818) 555-0505</a></p>
+        </div>
+        
+        <div class="loc">
+        	<img src="images/Pattern_loc.png" alt="butterfly" class="locImg" /><br>
+            <a href="studiocity.html"><h4>Studio City</h4></a>
+            <p><img src="images/location.png" alt="location icon" class="icon"/><a id="sc" onClick="openMapSC();">4000 Colefax Ave, <br> Studio City, CA 91604</a></p>
+            <p><img src="images/phone.png" alt="phone icon" class="icon"/><a href="tel:8185550404"> (818) 555-0404</a> </p>        
+        </div>
+        
+    	<div class="loc">
+        	<img src="images/Pattern_loc.png" alt="butterfly" class="locImg" /><br>
+            <a href="thousandoaks.html"><h4>Thousand Oaks</h4></a>
+            <p><img src="images/location.png" alt="location icon" class="icon"/><a id="to" onClick="openMapTO();">1724 E Avenida str., <br> Thousand Oaks, CA 91362</a></p>
+            <p><img src="images/phone.png" alt="phone icon" class="icon"/><a href="tel:8055550606"> (805) 555-0606</a> </p>
+        </div>
+    </div>    
+	</section> 
+
+	<footer>
+    <p>images &copy; <a href="https://pixabay.com/">www.pixabay.com</a></p>
+    <p><a href="index.html">Home</a> | <a href="menu.html">Menu</a> | <a href="locations.html">Locations</a> | <a href="about.html">About Us</a> | <a href="Contact.html">Contact</a></p>
+    <p>design by <a href="https://mira8yotova.wordpress.com/">Mira Yotova</a> &copy; 2015</p>    
+	</footer>    
+        
+</div>
+<!--END div WRAPPER-->
+
+<script type="text/javascript">
+$('#menu').slicknav({
+label: '',
+duration: 500,
+prependTo:'#mobile-nav', 
+closeOnClick: false ,
+allowParentLinks: false ,
+});
+</script>
+
+
+<script type="text/javascript">
+function openMapTO()
+{
+	window.open("https://goo.gl/maps/pU4LQmutXu62", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=100, left=100, width=960, height=400");
+}
+function openMapSC()
+{
+	window.open("https://goo.gl/maps/fTTJArzjD122", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=100, left=100, width=960, height=400");
+}
+function openMapSO()
+{
+	window.open("https://goo.gl/maps/yNLi7LATHhJ2", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=100, left=100, width=960, height=400");
+}
+function openMapSM()
+{
+	window.open("https://goo.gl/maps/WVKkPfCxv5T2", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=100, left=100, width=960, height=400");
+}
+function openMapAH()
+{
+	window.open("https://goo.gl/maps/bohyCrYKiv42", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=100, left=100, width=960, height=400");
+}
+
+
+</script>
+</body>
+</html>
