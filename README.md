@@ -1,0 +1,2 @@
+# ButterflyCafe
+Re-design project for responsive restaurant website included embedded fonts, responsive navigation, a responsive slideshow, and a responsive form. This assignment is a part of my education at Santa Monica College, CA. The website was designed with Adobe Photoshop and built in Dreamweaver using HTML5, CSS3 and JavaScript.The goals of the project are to create a responsive website with a modern vision, functional and user-friendly.
